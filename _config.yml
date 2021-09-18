@@ -1,28 +1,11 @@
-name: OrdinaryDay...
-permalink: :year/:month/:day/:title
-baseurl: /ordinaryday
+title: Le journal intime
+email: 
+description: >
+  Journal , <br>
+  Par Mr. P. Marat auteur de l'Offrande a la patrie, <br>
+  du Moniteur et du Plan de Constitution, etc.
+tagline: vitam impendere vero
+date: true
+baseurl: "/ordinaryday" # the subpath of your site, e.g. /blog
+url: "http://vyej.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
-# Your blog's start year and this year, showed in the footer left
-# start is optional
-start: 
-now: 2021
- 
-# Social links showed in the footer
-# You just need modify the nickname of github and twitter
-link:
-  email : yourname@gmail.com
-  github : yourname
-  twitter : yourname
-
-# Links in the navigation, you can modify both link name and link url
-nav:
-   
-   Diary: "/"
-
-   
-markdown: kramdown
-highlighter: rouge
-
-sass:
-  sass_dir: _sass
-  style: compressed
