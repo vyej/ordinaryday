@@ -11,5 +11,5 @@ url: "http://vyej.github.io" # the base hostname & protocol for your site, e.g. 
 
 lang: zh
 
-paginate: 25
+paginate: 10
 paginate_path: '/page:num/'

@@ -15,12 +15,6 @@
 
       <p class="right tagline">{{ site.tagline }}</p>
       <img src="{{ site.baseurl }}/assets/img/grunge.png" alt="" class="line tag">
-      <div class="center">
-        <br>
-        <h4 class="space">{{ site.location | upcase }}</h4>
-        {% if site.date == true %}<h5>{{ site.time | date_to_long_string | upcase }}</h5>{% endif %}
-        <br>
-      </div>
       
       {% include posts.html %}
       
