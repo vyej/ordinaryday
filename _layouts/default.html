@@ -3,7 +3,6 @@
   <head>
     <title>{{ site.title }}</title>
     {% include header.html %}
-    {% seo %}
   </head>
   <body>
 
@@ -22,7 +21,9 @@
         {% if site.date == true %}<h5>{{ site.time | date_to_long_string | upcase }}</h5>{% endif %}
         <br>
       </div>
+      
       {% include posts.html %}
+      
     </div>
 
     {% include foot.html %}
