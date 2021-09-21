@@ -9,7 +9,12 @@ date: true
 baseurl: "/ordinaryday" # the subpath of your site, e.g. /blog
 url: "http://vyej.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
-lang: zh
-
 paginate: 10
 paginate_path: '/page:num/'
+
+permalink: /:year/:month/:day/
+
+# Build settings
+markdown: kramdown
+plugins:
+  - github-pages
