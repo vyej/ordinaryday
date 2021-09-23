@@ -1,65 +1,9 @@
-site: Ordinary Days
-url: 
-author: 
-author:
-title: Ordinary Days
-description: it is a diary!
-  
-permalink: pretty
+name: Ordinary Days
+url: https://vyej.github.io/ordinaryday
+description: It is a Diary!
 
-baseurl:   "https://vyej.github.io/ordinaryday"
-
-include:
-  - _redirects
-  
-compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-
-sass:
-  sass_dir:          _sass
-  style:            :compressed
-
-plugins:
-  - jekyll-paginate
-  - jekyll-gist
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - disqus-for-jekyll
-
-collections:
-  pages:
-    output: true
-    permalink: /:name
-  posts:
-    output: true
-    permalink: /:year/:month/:day/:title
-  
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"    
-      
-  - scope:
-      path: "assets/images"
-    values:
-      image: true
-
+permalink: /:year/:month/:day/:title/
 paginate: 7
-paginate_path: '/page:num/'
 
 gems: [jekyll-paginate]
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
