@@ -7,7 +7,7 @@ description: it is a diary!
   
 permalink: pretty
 
-baseurl:   "https://vyej.github.io/"
+baseurl:   "https://vyej.github.io/ordinaryday"
 
 include:
   - _redirects
@@ -58,3 +58,6 @@ defaults:
       path: "assets/images"
     values:
       image: true
+
+paginate: 7
+paginate_path: '/page:num/'
