@@ -1,26 +1,21 @@
+---
+layout: compress
+---
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>{{ site.title }}</title>
-    {% include header.html %}
-  </head>
+<html lang="en">
+
+  {% include head.html %}
+
   <body>
+     {% include masthead.html %}
 
-    {% include nav.html %}
-    <div class="container">
-      <img src="{{ site.baseurl }}/assets/img/grunge.png" alt="" class="line">
-     
-      <h1 class="brand title center" id="type">{{ site.title | upcase }}</h1>
-      <h5 class="center">{{ site.description | markdownify }}</h5>
+      <main id="main" role="main">
+	      
+        {{ content }}
+      </main>
 
-      <p class="right tagline">{{ site.tagline }}</p>
-      <img src="{{ site.baseurl }}/assets/img/grunge.png" alt="" class="line tag">
-       <br>
-      {% include articles.html %}
-       <br>
-    </div>
-
-    {% include foot.html %}
+    {% include footer.html %}
 
   </body>
 </html>

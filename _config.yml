@@ -1,26 +1,60 @@
-title: Le journal intime
-email: 
-description: >
-  Gewahrnis Endlichkeit Anwesen - Lassen, sich ereignen Journal , <br>
-  Les plus grandes idees de la divinite nous viennent par la ...  <br>
-  deus sive casus, Andenken , Dichterphilosoph Vorfrage , etc.
-tagline: vitam impendere vero
-date: true
-baseurl: "/ordinaryday" # the subpath of your site, e.g. /blog
-url: "http://vyej.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+site: Ordinary Days
+url: 
+author: 
+author:
+title: Ordinary Days
+description: it is a diary!
+  
+permalink: pretty
 
-paginate: 10
-paginate_path: '/page:num/'
+baseurl:   "https://vyej.github.io/"
 
-pagination:
-  enabled: true
-  per_page: 10
-  permalink: "/page/:num/"
-  title_suffix: " - page :num"
+include:
+  - _redirects
+  
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
 
-permalink: /:year/:month/:day/
+sass:
+  sass_dir:          _sass
+  style:            :compressed
 
-# Build settings
-markdown: kramdown
 plugins:
-  - github-pages
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - disqus-for-jekyll
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title
+  
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"    
+      
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
